@@ -9,11 +9,19 @@ The following figure shows an overview of our SlaugFL. The SlaugFL consists of t
 
 We divide the implementation code into two parts: The Preparation Phase and The Collaborative Training Phase.
 
+## Setup
+Install packages in the requirements.
+
 ## The Preparation Phase
 
 
 ## The Collaborative Training Phase
 
+1. Change the arguments in config.py
+2. Run the following script:
+```
+python main.py --function=run_job
+```
 
 ## Citation
 
@@ -28,3 +36,7 @@ If you find this code is useful to your research, please consider to cite our pa
   publisher={IEEE}
 }
 ```
+
+## Reference code
+1. FedLab: https://github.com/SMILELab-FL/FedLab
+2. FedGen: https://github.com/zhuangdizhu/FedGen
