@@ -9,7 +9,7 @@ def parse_arguments(argv):
     parser = argparse.ArgumentParser()
     parser.add_argument('--function', type=str, help='Name of the function you called.', default="")
     parser.add_argument('--lr_decay',help='learning rate decay rate',type=float,default=0.998)
-    parser.add_argument("--dataset", type=str, default="cifar100")
+    parser.add_argument("--dataset", type=str, default="cifar10")
     parser.add_argument("--dataset_mean", type=tuple, default= (0.4914, 0.4822, 0.4465)) #cifar10
     parser.add_argument("--dataset_std", type=tuple, default= (0.2023, 0.1994, 0.2010)) #cifar10
     parser.add_argument("--model_name", type=str, default="ResNet18")
