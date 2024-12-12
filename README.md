@@ -37,6 +37,7 @@ If you find this code is useful to your research, please consider to cite our pa
 }
 ```
 
-## Reference code
+## Acknowledgement
+Our code is built on the following projects. Thanks for their admiring contribution.
 1. FedLab: https://github.com/SMILELab-FL/FedLab
 2. FedGen: https://github.com/zhuangdizhu/FedGen
