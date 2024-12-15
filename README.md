@@ -5,7 +5,7 @@ This is the pytorch implementation code of the paper "[SlaugFL: Efficient Edge F
 ## Overview
 The following figure shows an overview of our SlaugFL. The SlaugFL consists of two parts. The left part, in the dotted box, is the preparation phase which aims to obtain a trained ACGAN model. The right part shows the process of our FL collaborative training. In the collaborative training phase, we propose a dual-calibration method on the device side to improve FL performance: during the local training phase of selected devices, the local model is calibrated on the augmented data and further corrected through aligning its local class prototypes with the received p-f global class prototypes.
 
-![SlaugFL](./SlaugFL_Overview.png)
+![image](./SlaugFL_Overview.png)
 
 We divide the implementation code into two parts: The Preparation Phase and The Collaborative Training Phase.
 
