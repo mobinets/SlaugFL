@@ -13,11 +13,21 @@ We divide the implementation code into two parts: The Preparation Phase and The 
 Install packages in the requirements.
 
 ## The Preparation Phase
+1. The generation of labeled candidate data.
+```
+Step 1: interact with chatgpt to get a specified number of prompts (in this work, we generate 2000 prompts for each class of data).
+Step 2: python diffusion_model.py 
+```
+   
+
+
+
+
 
 
 ## The Collaborative Training Phase
 
-1. Change the arguments in config.py
+1. Change the arguments in the config.py .
 2. Run the following script:
 ```
 python main.py --function=run_job
@@ -38,6 +48,6 @@ If you find this code is useful to your research, please consider to cite our pa
 ```
 
 ## Acknowledgement
-Our code is built on the following projects. Thanks for their admiring contribution.
+Our code is built on the following projects. Thanks for their admiring contributions.
 1. FedLab: https://github.com/SMILELab-FL/FedLab
 2. FedGen: https://github.com/zhuangdizhu/FedGen
