@@ -1,7 +1,6 @@
 from diffusers import StableDiffusionPipeline
 import torch
 import os
-import random
 from The_Preparation_Phase.prompts import prompt_airplane,prompt_automobile,prompt_horse,prompt_bird,prompt_cat,prompt_dog,prompt_deer,prompt_frog,prompt_ship,prompt_truck
 
 choice = 0  ## 0 presents 10 categories of data, 1 presents 100 categories of data
@@ -27,7 +26,7 @@ if choice==0:
             os.makedirs(photo_path,exist_ok=True)
 
         for num in range(2000):
-            my_prompt = random.choice(cifar10_prompt[i][num])
+            my_prompt = cifar10_prompt[i][num]
             image = pipe([my_prompt]).images[0]
             image=image.resize([32,32])
             image.save(photo_path+'/'+str(num)+".png")
@@ -41,7 +40,7 @@ elif choice == 1:
             os.makedirs(photo_path,exist_ok=True)
 
         for num in range(2000):
-            my_prompt = random.choice(cifar100_prompt[i][num])
+            my_prompt = cifar100_prompt[i][num]
             image = pipe([my_prompt]).images[0]
             image=image.resize([32,32])
             image.save(photo_path+'/'+str(num)+".png")
